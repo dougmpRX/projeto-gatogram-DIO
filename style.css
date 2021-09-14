@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(165, 189, 194);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.gatogram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.smartphone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;     
+}
+
+.smartphone img {
+    height: 50rem;
+}
+
+.gatogram-continue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(241, 241, 241, 0.6);
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid rgba(211, 211, 211, 0.801);
+    border-radius: 7px;
+    box-shadow: 5px 5px 10px grey;  
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.login-box {
+    width: 250px;
+    padding: 5%;
+    background-color: rgb(165, 189, 194);
+    border-radius: 8px;
+    align-content: center;
+    text-align: center;
+}
+
+.sign-up-box {
+    display: flex;
+    width: 250px;
+    margin-top: 10px;
+    padding: 3%;
+    background-color: rgb(165, 189, 194);
+    border-radius: 8px;
+    align-content: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 38px;
+    margin-bottom: 15px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-field {
+    padding: 4px 0px;
+    margin-bottom: 4px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#password-field {
+    padding: 4px 0px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    background-color: rgb(170, 170, 170);
+    align-content: center;
+    padding: 3px 50px 3px 50px;
+    margin: 5% 10%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.download-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    padding: 1.3rem 0;
+}
+
+#appstore {
+    width: 150px;
+    height: 50px;
+    margin: 10px 50px 10px 50px;
+}
+
+#googleplay {
+    width: 150px;
+    height: 50px;
+    margin: 10px 50px 10px 50px;
+}
+
+/* .app-down {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-down:nth-child(1) {
+    background-image: url(img/App-Store-icon.png);
+}
+
+.app-down:nth-child(2) {
+    background-image: url(img/Google-Play-icon.png);
+}
+
+*/
+@media (max-width: 1024px) {
+    .gatogram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #FFFFFF;
+    }
+
+    .gatogram-wrapper {
+        width: 90%;
+    }
+
+    .smartphone {
+        display: none;
+    }
+
+    .gatogram-continue {
+        width: 100%;
+    }
+
+    .group {
+        border: 1px solid transparent;
+    }
+}
